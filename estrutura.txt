@@ -1,0 +1,31 @@
+projeto_web_scraping/
+├── README.md
+├── setup.py
+├── requirements.txt
+├── .gitignore
+├── src/
+│   ├── __init__.py
+│   ├── main.py
+│   ├── pipeline/
+│   │   ├── __init__.py
+│   │   └── pipeline_de_dados.py
+│   ├── extratores/
+│   │   ├── __init__.py
+│   │   ├── i_extrator_de_dados.py
+│   │   ├── extrator_de_dados.py
+│   │   └── extrator_de_dados_alternativo.py
+│   ├── formatadores/
+│   │   ├── __init__.py
+│   │   ├── i_formatador_de_dados.py
+│   │   ├── formatador_de_dados.py
+│   │   └── formatador_de_dados_personalizado.py
+│   └── utils/
+│       ├── __init__.py
+│       └── funcoes_utilitarias.py
+├── tests/
+│   ├── __init__.py
+│   ├── test_pipeline_de_dados.py
+│   ├── test_extrator_de_dados.py
+│   └── test_formatador_de_dados.py
+└── docs/
+    └── documentação.md
