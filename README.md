@@ -41,3 +41,38 @@ project-root/
 ├── setup.py               # Arquivo de configuração para pacotes (opcional)
 └── README.md              # Instruções e informações do projeto
 ```
+
+## Descrição da Estrutura
+
+**projeto_web_scraping/**: Diretório raiz do projeto.
+- **README.md**: Arquivo com informações sobre o projeto.
+- **setup.py**: Script de configuração para instalação do pacote.
+- **requirements.txt**: Lista de dependências do projeto.
+- **.gitignore**: Arquivo para excluir arquivos/pastas do controle de versão.
+- **src/**: Diretório contendo o código-fonte.
+  - **__init__.py**: Torna o diretório um pacote Python.
+  - **main.py**: Ponto de entrada da aplicação.
+- **pipeline/**: Pacote responsável pela orquestração.
+  - **pipeline_de_dados.py**: Implementação da classe `PipelineDeDados`.
+- **extratores/**: Pacote com os extratores de dados.
+  - **i_extrator_de_dados.py**: Interface `IExtratorDeDados`.
+  - **extrator_de_dados.py**: Implementação concreta.
+  - **extrator_de_dados_alternativo.py**: Outra implementação (se houver).
+- **formatadores/**: Pacote com os formatadores de dados.
+  - **i_formatador_de_dados.py**: Interface `IFormatadorDeDados`.
+  - **formatador_de_dados.py**: Implementação concreta.
+  - **formatador_de_dados_personalizado.py**: Outra implementação (se houver).
+- **utils/**: Pacote para funções/utilitários gerais.
+  - **funcoes_utilitarias.py**: Funções auxiliares.
+- **tests/**: Diretório para testes unitários.
+  - **test_pipeline_de_dados.py**: Testes para `PipelineDeDados`.
+  - **test_extrator_de_dados.py**: Testes para extratores.
+  - **test_formatador_de_dados.py**: Testes para formatadores.
+- **docs/**: Documentação do projeto.
+  - **documentação.md**: Guia de uso, API, etc.
+
+### Detalhes Importantes
+
+- **Interfaces e Implementações**: As interfaces estão separadas das implementações concretas, seguindo o princípio da inversão de dependência.
+- **Pacotes Separados**: Cada componente (pipeline, extratores, formatadores, utils) tem seu próprio pacote, promovendo a organização e modularidade.
+- **Testes**: Os testes estão em um diretório dedicado, espelhando a estrutura do código-fonte para facilitar a manutenção.
